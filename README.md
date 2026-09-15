@@ -4,6 +4,17 @@ Codex 额度监控蛋是一款 Windows 本地额度查看工具，提供主窗�
 
 这是闭源软件的公开下载仓库，不包含源代码。
 
+## 下载
+
+当前测试版：v0.1.28 · Windows 10/11 x64
+
+- [下载安装版 MSI（推荐）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.1.28/Codex-QuotaEgg-0.1.28-setup.msi) — 下载后双击安装，可升级旧安装版。
+- [下载免安装版 ZIP](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.1.28/Codex-QuotaEgg-0.1.28-portable.zip) — 完整解压后运行 `Codex QuotaEgg.exe`。
+- [下载 SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.1.28/SHA256SUMS.txt)
+- [查看更新说明与全部历史版本](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases)
+
+请不要下载 GitHub 自动生成的 Source code 压缩包，它们不是可运行程序。
+
 ## 界面预览
 
 ![主窗口](media/main-window.png)
@@ -11,16 +22,6 @@ Codex 额度监控蛋是一款 Windows 本地额度查看工具，提供主窗�
 ![悬浮蛋拖拽演示](media/floating-egg.gif)
 
 ![外观设置](media/appearance-settings.png)
-
-## 下载
-
-正式版本将通过本仓库的 Releases 页面提供：
-
-- Windows x64 MSI 安装包
-- Windows x64 免安装 ZIP
-- SHA-256 校验值
-
-请不要下载 GitHub 自动生成的 Source code 压缩包，它们不是可运行程序。
 
 ## 说明
 
