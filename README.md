@@ -1,0 +1,37 @@
+# Codex QuotaEgg
+
+Codex 额度监控蛋是一款 Windows 本地额度查看工具，提供主窗口、托盘图标和液体悬浮蛋。
+
+这是闭源软件的公开下载仓库，不包含源代码。
+
+## 界面预览
+
+![主窗口](media/main-window.png)
+
+![悬浮蛋拖拽演示](media/floating-egg.gif)
+
+![外观设置](media/appearance-settings.png)
+
+## 下载
+
+正式版本将通过本仓库的 Releases 页面提供：
+
+- Windows x64 MSI 安装包
+- Windows x64 免安装 ZIP
+- SHA-256 校验值
+
+请不要下载 GitHub 自动生成的 Source code 压缩包，它们不是可运行程序。
+
+## 说明
+
+- 支持 Windows 10/11 x64。
+- 需要先安装 Codex 并使用 ChatGPT 账号登录。
+- 软件只读查询额度，不发起模型对话，不使用重置卡。
+- 本项目为非官方工具，与 OpenAI 没有隶属、合作或背书关系。
+- 当前程序未进行代码签名，Windows 可能显示未知发布者提示。
+
+## 版权与第三方许可
+
+Copyright (c) 2026 SHUNx2. All rights reserved.
+
+本软件为闭源专有软件。可安装和使用版权所有者正式发布的未修改可执行版本；未经书面许可不得重新分发或修改。第三方组件继续适用各自许可证，详见本仓库及发行包中的许可文件。
