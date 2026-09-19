@@ -1,47 +1,66 @@
-# Codex QuotaEgg
+# Codex QuotaEgg · Codex 额度监控蛋
 
-Codex 额度监控蛋是一款 Windows 本地额度查看工具，提供主窗口、托盘图标和液体悬浮蛋。
+在 Windows 桌面查看 Codex 剩余额度：主窗口、彩色托盘与会晃动的液体悬浮蛋。
 
-这是闭源软件的公开下载仓库，不包含源代码。
+本仓库仅提供闭源软件的官方发行文件，不包含程序源代码。“官方发行”指本项目作者发布，不代表 OpenAI 官方产品。
 
-## 下载
+## 下载 v0.9.2
 
-当前测试版：v0.9.1 · Windows 10/11 x64
+Windows 10/11 x64 · 测试版 · 无需另装 .NET
 
-- [下载安装版 MSI（推荐）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.1/Codex-QuotaEgg-0.9.1-setup.msi) — 下载后双击安装，可升级旧安装版。
-- [下载免安装版 ZIP](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.1/Codex-QuotaEgg-0.9.1-portable.zip) — 完整解压后运行 `Codex QuotaEgg.exe`。
-- [下载 SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.1/SHA256SUMS.txt)
-- [查看更新说明与全部历史版本](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases)
+- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.2/Codex-QuotaEgg-0.9.2-setup.msi)
+- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.2/Codex-QuotaEgg-0.9.2-portable.zip)
+- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.2/SHA256SUMS.txt)
+- [更新说明与历史安装包](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases)
 
-请不要下载 GitHub 自动生成的 Source code 压缩包，它们不是可运行程序。
+GitHub 自动生成的 Source code 压缩包不是可运行程序。
 
-## 本版更新
+## 液体额度蛋
 
-- 放大桌面与进程列表中的应用图标，补齐多尺寸 ICO 图层。
-- 移除“自动更新”设置和后台预下载；启动、手动刷新只检查版本，点击更新后才下载并安装。
-- 更新检查选择最高已发布且有安装资源的版本。
-- 包含主窗口排版、全量重置预测说明和木鱼互动。
+额度百分比、液位和颜色同步变化；拖动时液体会晃动。下图由 v0.9.2 原生控件生成，10%、40%、70%、89% 均为示例额度，并非真实账号数据。
 
-## 界面预览
+![10%、40%、70%、89% 四种状态动态展示](media/egg-states.gif)
 
-![主窗口](media/main-window.png)
+## v0.9.2 新功能
 
-![悬浮蛋拖拽演示](media/floating-egg.gif)
+- 主窗口拖到左侧、右侧或顶部可吸附隐藏。鼠标离开后收起，移到细边展开；拖回屏幕内部解除吸附。设置 → 外观可关闭“主窗口贴边隐藏”。
+- 收起、展开使用逐帧平滑移动；隐藏后的触发区限制在所属屏幕细边，修复其他屏幕点击误展开。
+- 手动更新分为“正在下载”“正在安装”“更新完成”：下载显示已知大小的真实百分比，安装显示等待时间；网络无进度时提示等待响应并进行有界重试。
+- 修正全量重置概率与预测日期旁两个说明图标的符号对齐。
 
-![外观设置](media/appearance-settings.png)
+![贴边隐藏操作示意](media/edge-hide.gif)
 
-![关于与手动更新](media/about-settings.png)
+上图使用新版真实界面合成动作示意，演示右侧收起与展开；不是桌面实录，也不代表实际运行帧率。
 
-## 说明
+## 最新界面
 
-- 支持 Windows 10/11 x64。
-- 需要先安装 Codex 并使用 ChatGPT 账号登录。
-- 软件只读查询额度，不发起模型对话，不使用重置卡。
-- 本项目为非官方工具，与 OpenAI 没有隶属、合作或背书关系。
-- 当前程序未进行代码签名，Windows 可能显示未知发布者提示。
+以下为 v0.9.2 程序渲染的界面截图，额度与日历均使用示例数据。
 
-## 版权与第三方许可
+### 主窗口
+
+![v0.9.2 主窗口](media/main-window.png)
+
+### 外观设置
+
+![v0.9.2 外观设置与贴边隐藏开关](media/appearance-settings.png)
+
+### 关于与在线更新
+
+![v0.9.2 关于页面](media/about-settings.png)
+
+## 使用说明
+
+1. 先安装 Codex 并使用 ChatGPT 账号登录。
+2. 安装 MSI，或完整解压 ZIP 后运行 `Codex QuotaEgg.exe`。
+3. 主窗口查看额度，右上角切换额度蛋；主窗口和托盘使用一致的额度颜色。消耗速度提示另按时间进度判断，不等同于剩余额度颜色。
+4. 启动与手动刷新会检查新版本；点击更新才下载和安装，没有后台自动下载安装开关。旧版升级到本版时，下载阶段仍由旧版界面显示，新进度界面用于本版今后的更新。
+
+额度查询不发起模型对话，不消耗重置卡；日历来源为 codex-resets.com，全量重置预测仅供参考，不是确定日程。说明图标可查看计算口径。
+
+本项目为非官方工具，与 OpenAI 无隶属、合作或背书关系。程序未进行代码签名，Windows 可能提示未知发布者。遇到下载停滞可稍后重试，或从本页手动下载安装包。
+
+## 许可
 
 Copyright (c) 2026 SHUNx2. All rights reserved.
 
-本软件为闭源专有软件。可安装和使用版权所有者正式发布的未修改可执行版本；未经书面许可不得重新分发或修改。第三方组件继续适用各自许可证，详见本仓库及发行包中的许可文件。
+本软件为闭源专有软件，可安装和使用作者正式发布的未修改版本；未经书面许可不得重新分发或修改。第三方组件依其原许可证，详见发行包与仓库中的许可文件。
