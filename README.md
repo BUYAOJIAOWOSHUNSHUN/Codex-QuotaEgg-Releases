@@ -6,14 +6,21 @@ Codex 额度监控蛋是一款 Windows 本地额度查看工具，提供主窗�
 
 ## 下载
 
-当前测试版：v0.1.30 · Windows 10/11 x64
+当前测试版：v0.9.1 · Windows 10/11 x64
 
-- [下载安装版 MSI（推荐）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.1.30/Codex-QuotaEgg-0.1.30-setup.msi) — 下载后双击安装，可升级旧安装版。
-- [下载免安装版 ZIP](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.1.30/Codex-QuotaEgg-0.1.30-portable.zip) — 完整解压后运行 `Codex QuotaEgg.exe`。
-- [下载 SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.1.30/SHA256SUMS.txt)
+- [下载安装版 MSI（推荐）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.1/Codex-QuotaEgg-0.9.1-setup.msi) — 下载后双击安装，可升级旧安装版。
+- [下载免安装版 ZIP](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.1/Codex-QuotaEgg-0.9.1-portable.zip) — 完整解压后运行 `Codex QuotaEgg.exe`。
+- [下载 SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.1/SHA256SUMS.txt)
 - [查看更新说明与全部历史版本](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases)
 
 请不要下载 GitHub 自动生成的 Source code 压缩包，它们不是可运行程序。
+
+## 本版更新
+
+- 放大桌面与进程列表中的应用图标，补齐多尺寸 ICO 图层。
+- 移除“自动更新”设置和后台预下载；启动、手动刷新只检查版本，点击更新后才下载并安装。
+- 更新检查选择最高已发布且有安装资源的版本。
+- 包含主窗口排版、全量重置预测说明和木鱼互动。
 
 ## 界面预览
 
@@ -22,6 +29,8 @@ Codex 额度监控蛋是一款 Windows 本地额度查看工具，提供主窗�
 ![悬浮蛋拖拽演示](media/floating-egg.gif)
 
 ![外观设置](media/appearance-settings.png)
+
+![关于与手动更新](media/about-settings.png)
 
 ## 说明
 
