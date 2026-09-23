@@ -4,13 +4,13 @@
 
 本仓库仅提供闭源软件的官方发行文件，不包含程序源代码。“官方发行”指本项目作者发布，不代表 OpenAI 官方产品。
 
-## 下载 v0.9.5
+## 下载 v0.9.6
 
 Windows 10/11 x64 · 测试版 · 无需另装 .NET
 
-- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.5/Codex-QuotaEgg-0.9.5-setup.msi)
-- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.5/Codex-QuotaEgg-0.9.5-portable.zip)
-- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.5/SHA256SUMS.txt)
+- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.6/Codex-QuotaEgg-0.9.6-setup.msi)
+- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.6/Codex-QuotaEgg-0.9.6-portable.zip)
+- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.6/SHA256SUMS.txt)
 - [更新说明与历史安装包](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases)
 
 GitHub 自动生成的 Source code 压缩包不是可运行程序。
@@ -21,10 +21,17 @@ GitHub 自动生成的 Source code 压缩包不是可运行程序。
 
 ![10%、40%、70%、89% 四种状态动态展示](media/egg-states.gif)
 
+## v0.9.6 预测与事件状态修复
+
+- 长时间等待、可比历史样本少时，不再一律显示横线；整体历史足够且数据新鲜时，显示明确标注“低置信度”的参考概率和日期。
+- 说明图标中补充计算方式与限制；历史不足、过旧或不稳定时仍不强行给出数值。参考日期不是承诺或最晚期限。
+- “上次重置”仍显示网站状态，并补充“发卡公告”或“全量重置”类型；与个人重置卡余额、使用记录分开。
+- 状态前新增小地球图标，悬停显示网站来源。
+
 ## v0.9.5 重置卡信息
 
 - 点击重置卡可查看 Codex 返回的每张可用卡的到期日期、时间与本机时区；只有数量、没有日期时明确说明，不推测到期时间。
-- 使用重置卡恢复的是个人额度，不计入全量重置历史预测；预测缺少可比历史样本时会解释横线原因。
+- 使用重置卡恢复的是个人额度，不计入全量重置历史预测；不影响全量重置预测的起算时间。
 - 已用掉的卡不再出现在当前可用明细中，无法从余额 0 反查原到期时间。
 
 ## v0.9.4 更新下载改进
