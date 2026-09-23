@@ -4,13 +4,13 @@
 
 本仓库仅提供闭源软件的官方发行文件，不包含程序源代码。“官方发行”指本项目作者发布，不代表 OpenAI 官方产品。
 
-## 下载 v0.9.4
+## 下载 v0.9.5
 
 Windows 10/11 x64 · 测试版 · 无需另装 .NET
 
-- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.4/Codex-QuotaEgg-0.9.4-setup.msi)
-- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.4/Codex-QuotaEgg-0.9.4-portable.zip)
-- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.4/SHA256SUMS.txt)
+- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.5/Codex-QuotaEgg-0.9.5-setup.msi)
+- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.5/Codex-QuotaEgg-0.9.5-portable.zip)
+- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v0.9.5/SHA256SUMS.txt)
 - [更新说明与历史安装包](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases)
 
 GitHub 自动生成的 Source code 压缩包不是可运行程序。
@@ -21,6 +21,12 @@ GitHub 自动生成的 Source code 压缩包不是可运行程序。
 
 ![10%、40%、70%、89% 四种状态动态展示](media/egg-states.gif)
 
+## v0.9.5 重置卡信息
+
+- 点击重置卡可查看 Codex 返回的每张可用卡的到期日期、时间与本机时区；只有数量、没有日期时明确说明，不推测到期时间。
+- 使用重置卡恢复的是个人额度，不计入全量重置历史预测；预测缺少可比历史样本时会解释横线原因。
+- 已用掉的卡不再出现在当前可用明细中，无法从余额 0 反查原到期时间。
+
 ## v0.9.4 更新下载改进
 
 - 支持断点续传：断线重试、主动停止或再次启动下载时，保留同一安装包的已有数据。服务器不支持续传时安全重新下载，最终仍须通过 SHA-256 校验。
@@ -28,7 +34,7 @@ GitHub 自动生成的 Source code 压缩包不是可运行程序。
 - 悬停下载文字可查看速度、下载量与重试次数，并点击“停止下载”；停止后显示“继续下载”。校验和安装阶段不提供停止按钮。
 - 持续低速时提供提示与手动更新入口，可停止软件内下载后转到浏览器。遵循设备网络设置，不内置私人代理或第三方镜像；不能保证所有网络都高速。
 
-新下载逻辑在安装本版后的更新中生效；旧版升级到本版时仍由旧版下载器处理。
+新下载逻辑自 v0.9.4 起生效；更旧版本升级时仍由其自身下载器处理。
 
 ### 最近的界面改进
 
@@ -36,7 +42,7 @@ GitHub 自动生成的 Source code 压缩包不是可运行程序。
 - 设置 → 外观新增声效开关和音量滑块，默认开启、音量 60%；调至 0% 或关闭开关即可无声，不改变系统音量。
 - 修复中央折叠按钮收起时窗口和文字缩放跳动。
 
-本次沿用 v0.9.2 的图片与动图，未重新制作；声效、音量控制及更新下载交互以 v0.9.4 程序为准。
+本次沿用 v0.9.2 的图片与动图，未重新制作；声效、音量控制及更新下载交互以当前程序为准。
 
 ## 已有功能
 
