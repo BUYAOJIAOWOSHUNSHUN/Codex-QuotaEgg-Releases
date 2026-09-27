@@ -4,13 +4,13 @@
 
 本仓库仅提供闭源软件的官方发行文件，不包含程序源代码。“官方发行”指本项目作者发布，不代表 OpenAI 官方产品。
 
-## 下载 v1.0.0
+## 下载 v1.0.1
 
 Windows 10/11 x64 · 测试版 · 无需另装 .NET
 
-- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.0.0/Codex-QuotaEgg-1.0.0-setup.msi)
-- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.0.0/Codex-QuotaEgg-1.0.0-portable.zip)
-- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.0.0/SHA256SUMS.txt)
+- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.0.1/Codex-QuotaEgg-1.0.1-setup.msi)
+- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.0.1/Codex-QuotaEgg-1.0.1-portable.zip)
+- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.0.1/SHA256SUMS.txt)
 - [更新说明与历史安装包](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases)
 
 GitHub 自动生成的 Source code 压缩包不是可运行程序。
@@ -20,6 +20,13 @@ GitHub 自动生成的 Source code 压缩包不是可运行程序。
 额度百分比、液位和颜色同步变化；拖动时液体会晃动。下图由 v0.9.2 原生控件生成，10%、40%、70%、89% 均为示例额度，并非真实账号数据。
 
 ![10%、40%、70%、89% 四种状态动态展示](media/egg-states.gif)
+
+## v1.0.1 预测显示修复
+
+- 修复网站没有提供百分比时覆盖本机计算、导致概率一直显示横线的问题。左侧按历史统计估算今天剩余时段的概率，有有效网站观察信号时作有限加权；这是未经过命中率校准的参考估算。
+- 右侧改为清晰的本地日期，例如“09/30 前”；它表示网站观察窗口的截止日期。说明中显示具体时间，不再把长英文压缩成小字，也不表示保证重置。
+- 用量建议后面的逗号保持灰色，只有提醒文字变橙色；下载悬浮说明缩短，保留停止下载按钮。
+- 历史不足或过期仍明确显示暂无可靠数值；网站信号不会绕过数据要求。图片和动图沿用现有版本。
 
 ## v1.0.0 今日额度建议与悬浮蛋置顶
 
