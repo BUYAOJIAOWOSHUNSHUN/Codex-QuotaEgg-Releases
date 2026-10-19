@@ -4,13 +4,13 @@
 
 本仓库仅提供闭源软件的官方发行文件，不包含程序源代码。“官方发行”指本项目作者发布，不代表 OpenAI 官方产品。
 
-## 下载 v1.0.6
+## 下载 v1.261019.1
 
 Windows 10/11 x64 · 测试版 · 无需另装 .NET
 
-- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.0.6/Codex-QuotaEgg-1.0.6-setup.msi)
-- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.0.6/Codex-QuotaEgg-1.0.6-portable.zip)
-- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.0.6/SHA256SUMS.txt)
+- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261019.1/Codex-QuotaEgg-1.261019.1-setup.msi)
+- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261019.1/Codex-QuotaEgg-1.261019.1-portable.zip)
+- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261019.1/SHA256SUMS.txt)
 - [更新说明与历史安装包](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases)
 
 GitHub 自动生成的 Source code 压缩包不是可运行程序。
@@ -21,7 +21,17 @@ GitHub 自动生成的 Source code 压缩包不是可运行程序。
 
 ![10%、40%、70%、89% 四种状态动态展示](media/egg-states.gif)
 
-## v1.0.6 更新日志与续费提醒
+## v1.261019.1 网站同步与更新日志优化
+
+- 参考网站与实际额度独立刷新：网站状态每 5 分钟、完整历史每 15 分钟同步，额度仍按用户设置刷新。网站响应慢不再拖住额度刷新。
+- 网站失败后逐步延长重试间隔，并遵守服务器限流等待时间。手动刷新额度不会绕过等待期，避免频繁重复访问。
+- 网站同步异常时保留上次完整日历，简短说明超时、限流或临时失败；旧历史不会伪装成最新数据。此改进不能保证第三方网站和所有网络始终可用。
+- 更新日志宽度改为默认主窗口的 90%，保留滚动与关闭按钮，移除底部“不再提示”按钮。
+- 仅在成功升级后的第一次启动自动展示日志；同版本后续启动、隐藏或重新打开主窗口都不再自动弹出。设置 → 关于仍可手动查看。
+
+本次采用日期版号，可直接从 v1.0.6 等旧版在线更新。Windows 文件版本 `1.2610.19.1`、安装器内部版本 `1.26.29201` 对应公开版本 `v1.261019.1`。原有图片、动图和历史安装包保留。
+
+## v1.0.6 更新日志与续费提醒（历史记录）
 
 - 升级后首次打开主窗口时展示更新日志，按版本查看日期和分类说明；关闭后同版本不重复提示，下次更新重新展示。设置 → 关于可随时重新查看。
 - 手动填写的套餐到期日前三天显示“是否已续费”；选择“是”将原到期日顺延一个自然月，月底自动适配。选择“否”不改变日期。此功能只维护本机记录，不扣款、不代办续费。
