@@ -4,13 +4,13 @@
 
 本仓库仅提供闭源软件的官方发行文件，不包含程序源代码。“官方发行”指本项目作者发布，不代表 OpenAI 官方产品。
 
-## 下载 v1.261020.1
+## 下载 v1.261020.4
 
 Windows 10/11 x64 · 测试版 · 无需另装 .NET
 
-- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261020.1/Codex-QuotaEgg-1.261020.1-setup.msi)
-- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261020.1/Codex-QuotaEgg-1.261020.1-portable.zip)
-- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261020.1/SHA256SUMS.txt)
+- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261020.4/Codex-QuotaEgg-1.261020.4-setup.msi)
+- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261020.4/Codex-QuotaEgg-1.261020.4-portable.zip)
+- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261020.4/SHA256SUMS.txt)
 - [更新说明与历史安装包](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases)
 
 GitHub 自动生成的 Source code 压缩包不是可运行程序。
@@ -21,18 +21,28 @@ GitHub 自动生成的 Source code 压缩包不是可运行程序。
 
 ![10%、40%、70%、89% 四种状态动态展示](media/egg-states.gif)
 
-## v1.261020.1 配置备份与悬浮蛋状态记忆
+## v1.261020.4 设置与配置备份小更新
 
-- “设置 → 配置备份”提供本机快照、云端连接、历史记录与恢复预览，按“连接设置 / 备份与恢复”两部分组织。
+- 设置保留“外观 / 刷新提醒 / 连接 / Codex配置备份 / 关于”五个分类，按功能类型适当留白。
+- 配置备份的连接、频率、时间及快照下载整合为单页，常用按钮收紧，不需要上下滚动；设备、目录和教程收在“更多设置”。
+- 密码按实际位数显示星号，眼睛按钮可切换显隐；已保存密码默认只读取长度，点击眼睛才显示明文。各服务分别记住服务器、账号及保存状态。
+- 合并云端与定时控制：勾选上方开关并“保存配置”，同时应用频率和时间；取消勾选并保存则停用自动备份。“立即备份”移到上方，手动备份不会自动启用计划。
+- 移除软件内覆盖恢复，改为“下载备份文件”和“打开所在文件夹”；下载校验后的 ZIP 可自行交给 Codex 处理，不写回或覆盖现有配置。
+- 关于页直接展示运行日志，不再折叠。日志仅保存在本机，保留刷新和导出。
+
+### 保留的配置备份能力
+
 - 支持坚果云、Koofr 和其他 HTTPS WebDAV 云盘或 NAS；应用密码保存到当前 Windows 用户凭据管理器，不写入明文配置、日志或备份包。连接教程采用[坚果云官方说明](https://help.jianguoyun.com/?p=2064)和[Koofr 官方说明](https://koofr.eu/help/koofr_with_webdav/how-do-i-connect-a-service-to-koofr-through-webdav/)。
 - 同一云盘账号下按设备独立归档；同型号、同电脑名也不会合并。每次自动打包 ZIP，云端上传后下载验证 SHA-256，验证通过才记录云端成功。
 - 自动备份可设置每天、每周指定日或间隔小时，并自定义时间；默认北京时间 23:50。错过后在下一次启动监控蛋时补做。后台任务不唤醒电脑，也不启动 Codex。
-- 最近 30 天为活跃快照，过期数据移到可恢复归档。恢复需预览、确认并退出 Codex，先保存恢复前状态，再核对结构和完整性。
+- 最近 30 天为活跃快照，过期数据移到可恢复归档，不永久删除。软件只下载备份副本，不自动覆盖恢复。
 - 修复悬浮蛋显隐记忆：重新打开主窗口或重启后保留上次选择，右上角图标与实际显示一致。
 
-备份范围为配置、项目名称/路径、侧栏索引和聊天归属关联，不包含聊天正文、项目源文件、完整数据库或 skills。云端只上传脱敏副本，项目名称和路径仍保留用于恢复。首次使用需自行填写云端连接，并启用备份计划；已有本机任务会在用户确认后接管，不自动重复部署。
+备份范围为配置、项目名称/路径、侧栏索引和聊天归属关联，不包含聊天正文、项目源文件、完整数据库或 skills。云端只上传脱敏副本，项目名称和路径仍保留用于恢复。首次使用需自行填写云端连接，勾选开关并保存配置；可识别的旧任务会在确认后接管，不属于本功能的同名任务不会被覆盖。
 
-以下由本版原生控件渲染，使用示例设备和空白账号，未连接个人云盘。
+发行包不包含作者的个人云盘账号、密码、配置、日志或真实备份。请在自己的设备上填写专用应用密码。
+
+以下沿用 v1.261020.1 原生控件示例图，使用示例设备和空白账号；新版已整合单页，并将覆盖恢复替换为文件下载。
 
 ![配置备份：连接设置](media/config-backup-connection.png)
 
