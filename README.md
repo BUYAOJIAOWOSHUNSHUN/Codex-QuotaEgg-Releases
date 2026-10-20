@@ -4,13 +4,13 @@
 
 本仓库仅提供闭源软件的官方发行文件，不包含程序源代码。“官方发行”指本项目作者发布，不代表 OpenAI 官方产品。
 
-## 下载 v1.261019.1
+## 下载 v1.261020.1
 
 Windows 10/11 x64 · 测试版 · 无需另装 .NET
 
-- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261019.1/Codex-QuotaEgg-1.261019.1-setup.msi)
-- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261019.1/Codex-QuotaEgg-1.261019.1-portable.zip)
-- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261019.1/SHA256SUMS.txt)
+- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261020.1/Codex-QuotaEgg-1.261020.1-setup.msi)
+- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261020.1/Codex-QuotaEgg-1.261020.1-portable.zip)
+- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261020.1/SHA256SUMS.txt)
 - [更新说明与历史安装包](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases)
 
 GitHub 自动生成的 Source code 压缩包不是可运行程序。
@@ -21,7 +21,24 @@ GitHub 自动生成的 Source code 压缩包不是可运行程序。
 
 ![10%、40%、70%、89% 四种状态动态展示](media/egg-states.gif)
 
-## v1.261019.1 网站同步与更新日志优化
+## v1.261020.1 配置备份与悬浮蛋状态记忆
+
+- “设置 → 配置备份”提供本机快照、云端连接、历史记录与恢复预览，按“连接设置 / 备份与恢复”两部分组织。
+- 支持坚果云、Koofr 和其他 HTTPS WebDAV 云盘或 NAS；应用密码保存到当前 Windows 用户凭据管理器，不写入明文配置、日志或备份包。连接教程采用[坚果云官方说明](https://help.jianguoyun.com/?p=2064)和[Koofr 官方说明](https://koofr.eu/help/koofr_with_webdav/how-do-i-connect-a-service-to-koofr-through-webdav/)。
+- 同一云盘账号下按设备独立归档；同型号、同电脑名也不会合并。每次自动打包 ZIP，云端上传后下载验证 SHA-256，验证通过才记录云端成功。
+- 自动备份可设置每天、每周指定日或间隔小时，并自定义时间；默认北京时间 23:50。错过后在下一次启动监控蛋时补做。后台任务不唤醒电脑，也不启动 Codex。
+- 最近 30 天为活跃快照，过期数据移到可恢复归档。恢复需预览、确认并退出 Codex，先保存恢复前状态，再核对结构和完整性。
+- 修复悬浮蛋显隐记忆：重新打开主窗口或重启后保留上次选择，右上角图标与实际显示一致。
+
+备份范围为配置、项目名称/路径、侧栏索引和聊天归属关联，不包含聊天正文、项目源文件、完整数据库或 skills。云端只上传脱敏副本，项目名称和路径仍保留用于恢复。首次使用需自行填写云端连接，并启用备份计划；已有本机任务会在用户确认后接管，不自动重复部署。
+
+以下由本版原生控件渲染，使用示例设备和空白账号，未连接个人云盘。
+
+![配置备份：连接设置](media/config-backup-connection.png)
+
+![配置备份：计划与历史](media/config-backup-snapshots.png)
+
+## v1.261019.1 网站同步与更新日志优化（历史记录）
 
 - 参考网站与实际额度独立刷新：网站状态每 5 分钟、完整历史每 15 分钟同步，额度仍按用户设置刷新。网站响应慢不再拖住额度刷新。
 - 网站失败后逐步延长重试间隔，并遵守服务器限流等待时间。手动刷新额度不会绕过等待期，避免频繁重复访问。
