@@ -4,13 +4,13 @@
 
 本仓库仅提供闭源软件的官方发行文件，不包含程序源代码。“官方发行”指本项目作者发布，不代表 OpenAI 官方产品。
 
-## 下载 v1.261020.4
+## 下载 v1.261024.2
 
 Windows 10/11 x64 · 测试版 · 无需另装 .NET
 
-- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261020.4/Codex-QuotaEgg-1.261020.4-setup.msi)
-- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261020.4/Codex-QuotaEgg-1.261020.4-portable.zip)
-- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261020.4/SHA256SUMS.txt)
+- [安装版 MSI（推荐，可升级旧安装版）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261024.2/Codex-QuotaEgg-1.261024.2-setup.msi)
+- [免安装版 ZIP（完整解压后运行）](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261024.2/Codex-QuotaEgg-1.261024.2-portable.zip)
+- [SHA-256 校验文件](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases/download/v1.261024.2/SHA256SUMS.txt)
 - [更新说明与历史安装包](https://github.com/BUYAOJIAOWOSHUNSHUN/Codex-QuotaEgg-Releases/releases)
 
 GitHub 自动生成的 Source code 压缩包不是可运行程序。
@@ -21,7 +21,18 @@ GitHub 自动生成的 Source code 压缩包不是可运行程序。
 
 ![10%、40%、70%、89% 四种状态动态展示](media/egg-states.gif)
 
-## v1.261020.4 设置与配置备份小更新
+## v1.261024.2 近期预测与备份修复
+
+- 重置预测更重视近期记录，加入按本机时区判断的周末倾向；按实际日历天数校正，周末相对权重限制在 1.15～1.75 倍，并非直接放大显示的百分比。
+- 保留网站信号、历史不足与数据过期保护。周末权重是参考规则，目前回测未显示准确率提升，不代表周末一定重置。
+- 修复同一 Windows 用户因账户简称不同被误识别、导致每日备份计划无法启用的问题。保存配置时支持确认迁移可识别的旧任务；不会在普通启动或升级时自行接管任务。
+- 兼容已识别的 Codex 项目关联信息，修复部分“立即备份”失败；未知结构和敏感字段仍拒绝上传，旧备份保留。
+- 重启后可直接打开所选本机快照的文件夹，已下载云端备份的位置也会记住；尚未下载或文件不存在时给出提示。
+- 设置调整为“外观 / 刷新与连接 / Codex配置备份 / 关于”四个分类，按功能分组留白，保留原有设置。
+
+本次合并此前仅在本机交付的 v1.261021.1、v1.261024.1 修复。公开版本 `v1.261024.2` 对应 Windows 文件版本 `1.2610.24.2`、安装器内部版本 `1.26.29702`。现有用户升级保留设置；自动备份仍需自行启用，错过时在下次启动监控蛋后补做，不唤醒电脑。
+
+## v1.261020.4 设置与配置备份小更新（历史记录）
 
 - 设置保留“外观 / 刷新提醒 / 连接 / Codex配置备份 / 关于”五个分类，按功能类型适当留白。
 - 配置备份的连接、频率、时间及快照下载整合为单页，常用按钮收紧，不需要上下滚动；设备、目录和教程收在“更多设置”。
